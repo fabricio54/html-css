@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        /* quando passamos o mouse no parágrafo que é filho da div, dispara o valor nulo não mostra nada. */
+        div > p {
+            display: none; 
+        }
+        /* pseudo classes: quando passamos o mouse em cima de um parágrafo que é filha de uma div de estado que no casso mostra algo que está implicito ao toque */ 
+        div:hover > p {
+            display:block; /* mostre */
+            color:white;
+            background-color:rgb(132, 133, 77);
+            width: 300px;
+        }
+        /* ao passar o mouse em cima da div uma cor se destaca como ficou implícito no color */
+        div:hover {
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p> 
+        <p>Fim do exemplo</p>  
+    </div>
+</body>
+</html>
