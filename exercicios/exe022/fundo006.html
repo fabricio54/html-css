@@ -13,12 +13,22 @@
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-size: cover;
-            /* background-size temos varias configurações de alinhamento da imagem de fundo como, fixo com os valores em px ou porcentagem, com o parametro contein e cover para adpatar toda a imagem a tela e ir se adpatando aos diferentes tamanhos*/
+            background-attachment: fixed;
+            /* background-size temos varias configurações de alinhamento da imagem de fundo como, fixo com os valores em px ou porcentagem, com o parametro contein e cover para adpatar toda a imagem a tela e ir se adpatando aos diferentes tamanhos
+            attachment significa vinculo ficar cravado
+            temos duas opções: scrull o conteúdo vai rolar junto com o fundo e o fixed a tela fica fixa na rolagem*/
+
+            /* 
+            configurações da shorthand do background mais geral em uma linha
+            sorthand - background
+                color > image > position > repeat > [size] > attachment
+                */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;

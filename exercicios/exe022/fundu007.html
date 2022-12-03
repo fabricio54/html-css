@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+
+        /* posicionar um conteudo dentro do container deixando ele centralizado usando o container como referência.*/
+
+        /* primeiro informamos as dimensões dos objetos, logo depois algumas configurações extras e o mais importante no caso do container a posição dele tem que relative. por padrão ele ja vem configurado desse jeito */
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+
+        }
+        
+        /* segundo caso e o conteudo, onde temos que informamos as dimensões que serão menores do que o de cima, e algumas particularidades: primeiro o posicionamente tem que ser absoluto para que ele ganhe caracteristicas do tipo top, right, bottom e left. e tambem podemos acessar a propriedade transform com o parâmetro translate onde conseguiremos manipular a figura com mais facilidade. lembrando que é uma das maneiras de manipular o posiciomamento de figuras internas a um block. */ 
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="conteudo">
+
+        </div>
+    </div>
+</body>
+</html>
