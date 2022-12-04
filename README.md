@@ -5,4 +5,4 @@
 
  <a href="https://fabricio54.github.io/html-css/desafios/des010.1/android.html">acesso ao site android.</a>
 
-<a href="https://fabricio54.github.io/html-css/desafios/des011/corde.html">acesso ao projeto cordel</a>
+<a href="https://fabricio54.github.io/html-css/desafios/des011/cordel.html">acesso ao projeto cordel</a>
