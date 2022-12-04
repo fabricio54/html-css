@@ -24,6 +24,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte-normal);
 }
 
 header {
@@ -38,6 +39,8 @@ header {
 
 header h1 {
     padding-top: 50px;
+    font-family: var(--fonte02);
+    font-size: 10vw;
 }
 
 header p {
@@ -60,6 +63,8 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonte01);
+    font-size: 5vw;
 }
 
 section.normal {
@@ -74,7 +79,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    /* transformando e uma caixa ganhamos a flexibilidade do tamanho da caixa*/
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
