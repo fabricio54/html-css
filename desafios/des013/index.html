@@ -12,7 +12,7 @@
 
         table {
             border-collapse: collapse;
-            width: 700px;
+            width: 600px;
         }
 
         th {
@@ -38,10 +38,10 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="colgroup">Área</th>
+                <th rowspan="2" scope="colgroup">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="colgroup">Média</th>
             </tr>
             <tr>
                 <th>Nota 1</th>
@@ -75,7 +75,7 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th style="text-align:left"colspan="4">Media de Exatas</th>
+                <th style="text-align:left"colspan="4" scope="rowgroup">Media de Exatas</th>
                 <th>0.0</th>
             </tr>
             <tr>
@@ -92,7 +92,7 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th style="text-align:left"colspan="4">Média de Humanas</th>
+                <th style="text-align:left"colspan="4" scope="rowgroup">Média de Humanas</th>
                 <th>0.0</th>
             </tr>
         </tbody>
