@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla corrupti quidem nihil quisquam eaque eos! Similique ab iure officia inventore quis et odio? Ipsum harum dolor, possimus unde ut amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi veniam tempore culpa dicta consectetur temporibus atque quo libero? Blanditiis, eveniet ratione? Vitae est ut explicabo illum expedita odio earum voluptatibus.</p>
+
+    <ul>
+        <!-- ao fazermos isso abrimos a página dentro do iframe passando o parâmetro o nome que foi configurado-->
+        <li><a href="paginas-extras/pag001.html" target="frame">pagina 01</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">pagina 02</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">pagina 03</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta, sunt reprehenderit natus corporis minima delectus culpa maxime, sit voluptatem vero dolorem aperiam libero et cumque asperiores fugit quia? Eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis iure hic nam est adipisci minima beatae officiis accusamus. Suscipit eum delectus provident non nesciunt, libero omnis dolore quae mollitia ex?</p>
+    <!--Usando a propriedade name dentro da tag iframe informamos um nome e podemos chama-lo na propriedade target la em cima para abrir uma tela ou seja a tela vai abrir no iframe-->
+    <iframe id="tela"name="frame">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellat adipisci fugit cum modi aspernatur cumque, optio ipsa ducimus dolorum aliquid architecto ea qui esse possimus deleniti rem, vitae error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum obcaecati repellendus enim voluptatem reiciendis adipisci fugiat maxime, quia accusamus. Corrupti sit error minima assumenda nisi ipsum distinctio natus quam enim.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi vel deserunt, recusandae dolor sunt, porro aliquam, tempore facere aut soluta perferendis dolorum praesentium itaque. Perspiciatis quas ad explicabo dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, consectetur suscipit. Quaerat nemo tenetur, dolorem veritatis tempora fugit! Iusto vero reiciendis numquam molestiae quaerat at error maiores debitis cum voluptas.</p>
+</body>
+</html>
