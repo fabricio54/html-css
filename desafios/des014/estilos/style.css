@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* container externo */
+main {
+   /* indica posicionamento relativo */
+    position: relative;
+    height: 100vh;
+}
+
+/* container interno */
+section#telefone {
+    /* colocando a posição absoluta ganhamos as propriedades: top, left, bottom e right. usando a propriedade transform: translate e seus parâmetros posicionamos o celular no meio */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* dimensões da imagem do celular e a url da imagem*/
+    height: 627px;
+    width: 311px;
+    background:url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    
+    /* posicionando a imagem na largura da tela */
+    top: 80px;
+    left: 22px;
+
+    /* posicionamento para encaixar a imagem dentro do celular */ 
+    width: 267px;
+    height: 471px;
+}
+
+
+section#redes-socias {
+    /* posicionamente a direita dos ícones*/
+    text-align: right;
+}
+
+section#redes-socias img {
+    /* dentro da section no id redes-socias dentro de imagens: altura e larguara 50px, margin 10px e arrendondamento border-radius 50%*/
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+    
+    /* com essa configuração a bordar passa a fazer parte do objeto */
+    box-sizing: border-box;
+}
+
+/* ao mexer na imagem ele terá uma leve movimentação */
+section#redes-socias img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.623);
+    transform:translate(-2px, -2px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
+    
+    /* transition:translate; serve para quando clicar nas imagens o tempo para ela realizar o transform: a transladar */
+    transition: transform .4s, border 1s;
+}
