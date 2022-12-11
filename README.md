@@ -7,4 +7,4 @@
 
 <a href="https://fabricio54.github.io/html-css/desafios/des011/cordel.html">acesso ao projeto cordel</a>
 
-<a href="https://fabricio54.github.io/html-css/desafios/des014/projeto-redes-socias"> acesso ao projeto redes socias</a> 
+<a href="https://fabricio54.github.io/html-css/desafios/des014/index.html"> acesso ao projeto redes socias</a> 
