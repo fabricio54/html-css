@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <!-- Alguns parâmetros e seus significados: required (indica que o preenchimento desse campo e obrigatório), min e max lenght (indica respectivamente mínimo e máximo de caracteres que o campo pode receber), placeholder (sugere a informação que tem-se que digitar no campo indicado), name (identificador para linguagem php entre outras) id (identificador para o javascript) autocomplete (se o autocoplete estiver "on" no form, podemos colocar dentro do input os capos que ja tenham sido capturados pelo google)-->
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name">
+        </p>
+
+        <!-- alguns botoes a serem utilados-->
+        <p>
+            <label for="imedia">Media</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
+        </p>
+        <p>
+            <!--value para começar com um valor padrão-->
+            <label for="imes">Mês Letivo</label>
+            <input type="month" name="mes" id="imes" value="2020-07">
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Hora da prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
