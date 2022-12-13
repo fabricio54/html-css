@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- como se cria um formulário básico: nesse exemplo criamos o formulário com a tag form e colocamos os campos a serem preechidos com suas caixas.
+    com a propriedade action direcionamos para qual linguagem o conteudo do formulário vai (a linguagem específica utilizada).
+    o uso do name: identificador para a linguagem php e outras. id: utilizada para a linguagem javascript-->
+
+    <!-- por convensão para indentificarmos um id colocamos um "i" na frente da palavra para diferenciar. 
+    uso do label para linkar campo com a caixinha que será preenchida-->
+
+    <!-- method = "get"; utilizado para campos padrões onde as informações não serão relevantes, ex: nome, peso
+    method = "post"; utilizado para que se tenha um pouco mais de restrição-->
+    <form action="cadastro.php" method="post"autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
