@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+   
+    <form action="cadastro.php" method="POST" autocomplete="on">
+         <!-- exemplo de uma cor-->
+        <p>
+            <label for="icor">cor</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <!-- quando colocamos o parâmetro do tipo range por padrão ele sempre esta marcado em meio termo -->
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" max="5" value="2">
+        </p>
+        <p>
+            <!-- parâmetro file: pega um arquivo no seu pc.
+            obs: para que esse arquivo seja enviado obrigatóriamente temos que começar com method="POST"-->
+            <label for="ifoto">Foto do perfil </label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
