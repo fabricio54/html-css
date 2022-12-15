@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <!--obs: iremos utilizar um pouco de progamação com a linguagem JavaScript, mais so nesse exemplo-->
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inum">Numero: </label>
+            <input type="number" name="num" id="inum" min="0" max="50" required oninput="isoma.innerHTML = Number(inum.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="inum2">Numero</label>
+            <input type="number" name="num2" id="inum2" min="0" max="50" required oninput="isoma.innerHTML= Number(inum.value)+Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>
