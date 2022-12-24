@@ -20,7 +20,7 @@ header h1 {
     text-align: center;
 }
 
-i#burger {
+i#burguer {
     background-color: rgb(48, 48, 48);
     display: block;
     text-align: center;
@@ -28,7 +28,7 @@ i#burger {
     padding: 10px;
 }
 
-i#burger:hover {
+i#burguer:hover {
     background-color: white;
     color: black;
     /* vira a mãozinha no cursor */

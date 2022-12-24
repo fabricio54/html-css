@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequenas Telas: Até 600px
+Celular: 0px 600px até 768px
+Tablet: 768px Até 992px
+Desktop: 992px Até 1200px
+Grandões telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px){
+    /* fazer o anburguer de menu sumir para esta tela */
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
